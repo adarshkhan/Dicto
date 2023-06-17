@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Dictionary </title>
+</head>
+<body>
+    <script src="index1js.js"></script>
+    
+    <main>
+        <header>
+            <h1> My Dictionary App</h1>
+        </header>
+           <section class="first-content">
+            
+                <img  class="book-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFfSxVbA0_kVyaWSeEbGYOEwuSVkj4MUevig&usqp=CAU">
+                <h3>My,DICTIONARY </h3>
+                <button id="first-button" class="btn  btn-dark btn-large"  onclick="historyPage()">History</button>
+         </section>
+            <section class="text-content">
+                <form id ="content">
+                    
+                    <label for="wordsearch">Search for new word</label>
+                    <br>
+                    <input type="text" class="text-content-wirte" placeholder= "Please Enter words" id="wordsearch">
+                   
+                    <button class="btn btn-light btn-circle btn-xl" id="searching">
+                    <img  id="search" src="data:image/png;base64,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" alrt="lence">
+                    </button>
+                </form>
+            </section>
+                <section>
+                    <div id="container">
+                         
+                    </div>
+                </section>
+        </main>
+</body>
+</html>
